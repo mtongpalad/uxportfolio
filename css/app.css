@@ -169,6 +169,7 @@ opacity: .5;
 }
 
 .text {
+  font-family: 'Karla', sans-serif;
   color: white;
   font-size: 20px;
   position: absolute;
