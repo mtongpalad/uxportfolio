@@ -1,0 +1,247 @@
+
+
+  body {
+  	margin: 0;
+  	background: #ffffff;
+    font-family: 'Karla', sans-serif;
+  	font-weight: 400;
+  }
+
+  .container {
+  	width: 100%;
+  	margin: 0 auto;
+  }
+
+  header {
+    background: white;
+  }
+
+  figure {
+padding-top: 30px;
+padding-bottom: 30px;
+
+      }
+
+  header::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  .logo{width: 216px; height:72px; background-color: white; background-image: url("../img/mtlogo1.png");background-size: contain; text-indent: -50em; background-repeat: no-repeat;
+
+    float: left;
+    padding: 10px 0;
+    margin-left: -1em;
+
+  }
+
+  nav {
+    float: right;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+
+    position: relative;
+  }
+
+  nav a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+
+  }
+
+  nav a:hover {
+    color: #00A99D;
+
+  }
+
+
+
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+  }
+
+  nav a:hover::before {
+    width: 100%;
+  }
+
+
+
+
+  .tealiconcolor {color:#00A99D;}
+  .whitecolor{color: white;
+  margin-left: 1em;
+  padding-top: .6em;
+  margin-bottom: 0em;}
+
+
+  .footerspecs{background: #222;
+  padding-left: 1.3em;}
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.toppadding {
+padding-top: 50px;
+}
+
+h3{
+  text-align: center;
+  font-size:30px;
+  font-family: 'Karla', sans-serif;
+}
+h4{
+  text-align: center;
+  font-size:20px;
+  font-family: 'Karla', sans-serif;
+}
+
+h5{
+  font-size:20px;
+  font-family: 'Karla', sans-serif;
+}
+
+
+h1{
+  text-align: center;
+  font-size:15px;
+  font-family: 'Karla', sans-serif;
+}
+h6{
+  font-size:20px;
+  font-family: 'Karla', sans-serif; bold;
+}
+
+figure a:hover {
+opacity: .5;
+}
+
+
+
+.container {
+  position: relative;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #00A99D;
+}
+
+.container:hover .overlay {
+  opacity: .9;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+label {
+  clear: both;
+  display: block;
+  font-size: 0.85em;
+  font-weight: bold;
+  padding: 0.8em 0 0.2em 0;
+  user-select: none;
+}
+
+input, button {
+  float: left;
+  font-size: 1em;
+  padding: 3px 6px;
+  margin: 0;
+  border: 1px solid #333;
+}
+
+::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+input {
+  width: 15em;
+  background-color: #fff;
+  border-right: 0 none;
+  border-radius: 3px 0 0 3px;
+}
+
+button {
+  position: relative;
+  background-color: #aaa;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+
+.copied::after {
+  position: absolute;
+  top: 12%;
+  right: 110%;
+  display: block;
+  content: "Copied!";
+  font-size: 0.75em;
+  padding: 2px 3px;
+  color: #fff;
+  background-color: #00A99D;
+  border-radius: 3px;
+  opacity: 0;
+  will-change: opacity, transform;
+  animation: showcopied 1.5s ease;
+}
+
+@keyframes showcopied {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  70% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+  }
+}

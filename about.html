@@ -1,0 +1,129 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Tongpalad - Home</title>
+    <!-- LOAD FONT AWESOME  https://fontawesome.com/get-started/web-fonts-with-css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+  <!-- header/nav start-->
+
+
+
+
+  <header>
+      <div class="grid-container">
+            <a href="index.html" class="logo"></a>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="https://drive.google.com/file/d/1D29J4QSs2D-ZR8JjpPtl0JNaTZNNSMse/view?usp=sharing" target="_blank">Resume</a></li>
+
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+      <section id="main" class="grid-container">
+    <div class="grid-x">
+      <div class="cell large-4">
+        <br><br>
+
+         <img src="img/me-portfolio2.png" alt="">
+     </div>
+     <div class="cell large-8" style="padding-left:30px">
+       <br><br>
+
+       <h6>About Me!</h6>
+        <p> My name is Michael Tongpalad and I am an Interaction Design student in my final year at CSU East Bay. I am still exploring what particular spaces I want to hone in on, but currently I am interested in finding ways to improve people's productivity with different projects in the works related to this goal. </p>
+        <p>  Apart from learning design, I enjoy bboying (breakdancing), practicing guitar (guit it~), taco Tuesdays (al pastor is life), and YouTube (o˘◡˘o). </p>
+        <p>  Feel free to contact me if you'd like to chat!</p>
+
+        <label for="website"><h5>Email:</h5></label>
+        <input type="text" id="website" value="michael.tongpalad@gmail.com" />
+        <button data-copytarget="#website">Copy</button>
+
+    </div>
+    </div>
+
+
+
+  </section>
+  <br><br>
+
+
+
+  <footer class="footerspecs">
+    <p class="whitecolor">Michael Tongpalad &copy; 2019</p>
+    <ul class="menu">
+      <li><a href="https://www.linkedin.com/in/michael-tongpalad-02ab57148" target="_blank"><i class="fab fa-linkedin fa-2x tealiconcolor "></i></a></li>
+      <li><a href="https://www.instagram.com/nombreh/" target="_blank"><i class="fab fa-instagram fa-2x tealiconcolor"></i></a></li>
+      <li><a href="https://www.behance.net/michaeltongpalad" target="_blank"><i class="fab fa-behance fa-2x tealiconcolor"></i></a></li>
+
+
+    </ul>
+  </footer>
+
+    <!-- footer end-->
+
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/vendor/what-input.js"></script>
+        <script src="js/vendor/foundation.js"></script>
+        <script src="js/app.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>
+        (function() {
+
+            'use strict';
+
+          // click events
+          document.body.addEventListener('click', copy, true);
+
+            // event handler
+            function copy(e) {
+
+            // find target element
+            var
+              t = e.target,
+              c = t.dataset.copytarget,
+              inp = (c ? document.querySelector(c) : null);
+
+            // is element selectable?
+            if (inp && inp.select) {
+
+              // select text
+              inp.select();
+
+              try {
+                // copy text
+                document.execCommand('copy');
+                inp.blur();
+
+                // copied animation
+                t.classList.add('copied');
+                setTimeout(function() { t.classList.remove('copied'); }, 1500);
+              }
+              catch (err) {
+                alert('please press Ctrl/Cmd+C to copy');
+              }
+
+            }
+
+            }
+
+        })();
+        </script>
+
+
+      </body>
+    </html>
